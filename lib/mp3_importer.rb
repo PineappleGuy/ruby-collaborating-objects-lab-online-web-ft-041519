@@ -3,7 +3,7 @@ class MP3Importer
   
   attr_accessor :path
   @@array = []
-  
+
   def initialize(path)
     @path = path
   end
@@ -16,11 +16,11 @@ class MP3Importer
     end
     @@array
   end
-  
+
   def import
     @@array.each do |song|
       new_song = Song.new_by_filename(song)
     end
   end
-  
+
 end
